@@ -1,0 +1,122 @@
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+" Shuogo is a plulgin manager
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+
+" Required:
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
+
+  " Let dein manage dein
+  " Required:
+  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('wsdjeg/dein-ui.vim')
+
+  "System 
+  call dein#add('vimlab/split-term.vim')
+  call dein#add('vim-airline/vim-airline')
+  
+  "Less typing 
+  call dein#add('Shougo/deoplete.nvim')
+  call dein#add('mattn/emmet-vim')
+
+  "Highlighting / Colorscheme
+  "call dein#add('sheerun/vim-polyglot')
+  call dein#add('flazz/vim-colorschemes')
+
+  "Filesystem
+  call dein#add('kien/ctrlp.vim')
+  call dein#add('scrooloose/nerdtree')
+
+  "Elixir / Phoenix
+  call dein#add('tpope/vim-endwise')
+  call dein#add('c-brenn/phoenix.vim')
+  call dein#add('elixir-tools/elixir-tools')
+  call dein#add('nvim-lua/plenary')
+  "call dein#add('slashmili/alchemist.vim')
+
+  "Docker
+  call dein#add('ekalinin/Dockerfile.vim')
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+
+endif
+
+lua require("elixir").setup()
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
+
+"End dein Scripts-------------------------
+
+"deoplete
+let g:deoplete#enable_at_startup = 1
+
+let mapleader=","
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set nu
+set encoding=utf-8
+
+"vim-polyglot
+syntax on
+
+"emmet-vim
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,vue  EmmetInstall
+autocmd FileType html,css,vue imap <TAB> <plug>(emmet-expand-abbr)
+
+"format files on save - jsbeautify
+autocmd BufWritePre *.js call JsBeautify()
+autocmd BufWritePre *.css call CSSBeautify()
+autocmd BufWritePre *.html call HtmlBeautify()
+autocmd BufWritePre *.jsx call JsxBeautify()
+
+"alchemist.vim
+let g:alchemist_tag_disable = 1
+
+"setup colors
+set bg=dark
+set t_Co=256
+colorscheme gruvbox
+
+"setup deoplete
+let g:deoplete#enable_at_startup = 1
+"inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+"autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+
+"phpcd.vim
+"call deoplete#custom#option('ignore_sources', {'php': ['omni']})
+
+"resize vertical splits
+nnoremap <silent> <Leader>. :exe "vertical resize +5"<CR> 
+nnoremap <silent> <Leader>m :exe "vertical resize -5"<CR> 
+
+"airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#branch#enabled = 1
+
+"popup menu
+set completeopt-=preview
+
+"allow access to the system clipboard
+set clipboard+=unnamedplus
+
+"start Nerdtree
+autocmd VimEnter * NERDTree
