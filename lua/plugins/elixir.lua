@@ -18,7 +18,7 @@ return {
           log_level = vim.lsp.protocol.MessageType.Log,
           message_level = vim.lsp.protocol.MessageType.Log,
           on_attach = function(client, bufnr)
-            -- whatever keybinds you want, see below for more suggestions
+            -- keybinds
             vim.keymap.set("n", "<space>fp", ":ElixirFromPipe<cr>",
               { buffer = true, noremap = true })
             vim.keymap.set("n", "<space>tp", ":ElixirToPipe<cr>",

@@ -3,6 +3,7 @@
   "cmp-nvim-lsp": { "branch": "main", "commit": "0e6b2ed705ddcff9738ec4ea838141654f12eeef" },
   "colorbuddy.nvim": { "branch": "master", "commit": "cdb5b0654d3cafe61d2a845e15b2b4b0e78e752a" },
   "elixir-tools.nvim": { "branch": "main", "commit": "8ccb696c048eca667486ee005f4386c0db8c5e14" },
+  "git-blame.nvim": { "branch": "master", "commit": "06c20ea71a4519fc60caba9ac688f2f6404f03d5" },
   "gruvbuddy.nvim": { "branch": "master", "commit": "52bdae82517d7767dbd287141b9aabceeab0f9a5" },
   "lazy.nvim": { "branch": "main", "commit": "86c1a767f041edf62a068c9fe2ea912058521477" },
   "nerdtree": { "branch": "master", "commit": "fc85a6f07c2cd694be93496ffad75be126240068" },
