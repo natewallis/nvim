@@ -17,3 +17,5 @@ vim.opt.rtp:prepend(lazypath)
 
 -- load lazy plugins
 require("lazy").setup("plugins")
+
+--clipboard
