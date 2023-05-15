@@ -1,7 +1,8 @@
 return {
   {
+    -- custom status at bottom of window
     'vim-airline/vim-airline',
-    -- capppuccin color manager
+    -- catppuccin color scheme
     {
       "catppuccin/nvim",
       name = "catppuccin",
