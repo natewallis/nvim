@@ -2,7 +2,6 @@
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 
 -- indentation settings
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set shiftwidth=2")

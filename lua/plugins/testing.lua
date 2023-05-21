@@ -1,5 +1,6 @@
 return {
-	{
-		"vim-test/vim-test"
-	}
+  {
+    -- wrapper for running tests of different granularities
+    "vim-test/vim-test"
+  }
 }

@@ -1,6 +1,6 @@
 return {
-	{
-		'vimlab/split-term.vim'
-	}
+  {
+    -- provides split terminal support (and other featuers) in nvim
+    'vimlab/split-term.vim'
+  }
 }
-
