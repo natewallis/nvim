@@ -19,3 +19,4 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
 --clipboard
+vim.cmd "let g:vsnip_filetypes.ruby = ['rails']"
