@@ -1,5 +1,5 @@
 -- leader as space
---vim.g.mapleader = ' '
+vim.g.mapleader = ','
 
 -- bootstrap lazy plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"

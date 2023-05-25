@@ -17,5 +17,6 @@
   "vim-airline": { "branch": "master", "commit": "5891a3f7bedb5d0b23a546189a607836913814bb" },
   "vim-elixir": { "branch": "master", "commit": "6dd03f87d825bf0a9f8611eb54076c7952d4f15c" },
   "vim-fugitive": { "branch": "master", "commit": "5f0d280b517cacb16f59316659966c7ca5e2bea2" },
+  "vim-mapping-conflicts": { "branch": "master", "commit": "5a543737859b91281aefbb420b8aa766ee4ab351" },
   "vim-test": { "branch": "master", "commit": "08250c56f11cb3460c8a02c8fdb80c8d39c92173" }
 }
