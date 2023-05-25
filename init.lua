@@ -1,5 +1,5 @@
 -- leader as space
-vim.g.mapleader = ' '
+--vim.g.mapleader = ' '
 
 -- bootstrap lazy plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -19,4 +19,4 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
 --clipboard
-vim.cmd "let g:vsnip_filetypes.ruby = ['rails']"
+-- vim.cmd "let g:vsnip_filetypes.ruby = ['rails']"
