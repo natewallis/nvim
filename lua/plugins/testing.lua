@@ -18,6 +18,6 @@ return {
         })
       end
     },
-    'jfpedroza/neotest-elixir',
-  }
+  },
+  'jfpedroza/neotest-elixir',
 }

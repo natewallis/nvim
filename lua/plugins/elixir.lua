@@ -31,8 +31,7 @@ return {
       }
     end,
     dependencies = {
-      -- all the lua functions I don't want to write twice
-      "nvim-lua/plenary.nvim",
+      'nvim-lua/plenary.nvim',
     },
   },
   -- using for syntax highlighting
