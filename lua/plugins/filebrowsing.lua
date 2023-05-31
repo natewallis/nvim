@@ -4,5 +4,6 @@ return {
     config = function()
       vim.cmd ":NERDTree"
     end
-  }
+  },
+  'ctrlpvim/ctrlp.vim'
 }
