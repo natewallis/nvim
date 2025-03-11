@@ -47,7 +47,11 @@ return {
       local client_capabilities = vim.lsp.protocol.make_client_capabilities()
       local capabilities = require("cmp_nvim_lsp").default_capabilities(client_capabilities)
 
-      local servers = { "solargraph", "yamlls", "lua_ls" }
+      local servers = { "lua_ls", "ruby_lsp" }
+      -- Old config: local servers = { "solargraph", "yamlls", "lua_ls", "ruby_lsp" }
+      -- Currently this is a little limiting, as each LSP cannot be configured
+      -- It would be nice to iterate the lsp's, check they are even installed
+      -- If they are installed, lookup the config from a file (these are notes after reinstalling on a new machine with missing lsp's)
       for _, lsp in pairs(servers) do
         require("lspconfig")[lsp].setup({
           capabilities = capabilities,
