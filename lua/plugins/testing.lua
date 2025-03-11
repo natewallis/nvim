@@ -8,7 +8,8 @@ return {
         'nvim-lua/plenary.nvim',
         'nvim-treesitter/nvim-treesitter',
         'antoinemadec/FixCursorHold.nvim',
-        'jfpedroza/neotest-elixir'
+        'jfpedroza/neotest-elixir',
+        'nvim-neotest/nvim-nio'
       },
       config = function()
         require('neotest').setup({
