@@ -1,3 +1,5 @@
+vim.wo.relativenumber = true
+
 return {
   {
     "preservim/nerdtree",

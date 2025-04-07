@@ -1,5 +1,9 @@
 -- leader as space
-vim.g.mapleader = ','
+vim.g.mapleader = " "
+
+vim.keymap.set("n", "<leader>t", function()
+  print("Leader key works!")
+end, { desc = "Test leader key" })
 
 -- bootstrap lazy plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
