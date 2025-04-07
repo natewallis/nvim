@@ -19,5 +19,6 @@ return {
       --  require('colorbuddy').colorscheme('gruvbuddy')
       --end
     }
-  }
+  },
+  { "nvim-tree/nvim-web-devicons", opts = {} },
 }
