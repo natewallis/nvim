@@ -8,13 +8,15 @@ return {
         'nvim-lua/plenary.nvim',
         'nvim-treesitter/nvim-treesitter',
         'antoinemadec/FixCursorHold.nvim',
+        'nvim-neotest/nvim-nio',
         'jfpedroza/neotest-elixir',
-        'nvim-neotest/nvim-nio'
+        'olimorris/neotest-rspec',
       },
       config = function()
         require('neotest').setup({
           adapters = {
-            require('neotest-elixir')
+            require('neotest-elixir'),
+            require("neotest-rspec")
           }
         })
       end
